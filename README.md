@@ -1,6 +1,11 @@
 # jiraiya-sen
 
-Personal portfolio website for **Kai'ree Gay** — an animated starry-background resume site with a vertical career timeline and social links.
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+Personal portfolio and resume site for **Kai'ree Gay** — animated starry-background UI with a vertical career timeline.
+
+**Live demo:** Run locally with `npm start` → http://localhost:3000
 
 ---
 
@@ -31,32 +36,13 @@ npm install
 npm start
 ```
 
-Open http://localhost:3000
-
 ### Build for production
 
 ```bash
 npm run build
 ```
 
-Output in `build/` — deploy to GitHub Pages, Netlify, or Vercel.
-
----
-
-## Project structure
-
-```
-jiraiya-sen/
-├── src/
-│   ├── App.jsx
-│   └── components/
-│       ├── StarryBackground/     # Animated star field
-│       ├── open_message/         # Hero intro
-│       ├── verticalTimeline/     # Career timeline
-│       ├── navigation/           # Social bar
-│       └── footer/
-└── public/
-```
+Deploy `build/` to GitHub Pages, Netlify, or Vercel.
 
 ---
 
@@ -65,4 +51,4 @@ jiraiya-sen/
 **Kai'ree Gay**
 
 - [GitHub](https://github.com/Kaireega)
-- [LinkedIn](https://www.linkedin.com/in/kairee-gay/)
+- [LinkedIn](https://www.linkedin.com/in/kairee-gay-8520251b0)
