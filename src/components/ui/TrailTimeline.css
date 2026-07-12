@@ -1,0 +1,156 @@
+.trail {
+  padding: 5rem 0 6rem;
+}
+
+.trail__header {
+  max-width: 36rem;
+  margin-bottom: 3rem;
+}
+
+.trail__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #6ee7df;
+}
+
+.trail__title {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  color: #fafafa;
+}
+
+.trail__subtitle {
+  margin: 1rem 0 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: rgba(250, 250, 250, 0.75);
+}
+
+.trail__path {
+  position: relative;
+}
+
+.trail__line {
+  position: absolute;
+  left: 1.15rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(251, 191, 36, 0.8),
+    rgba(110, 231, 223, 0.5),
+    rgba(244, 114, 182, 0.4)
+  );
+}
+
+.trail-card {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.trail-card__marker {
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-top: 1.4rem;
+  border-radius: 50%;
+  background: rgba(12, 8, 28, 0.9);
+  border: 2px solid #fbbf24;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.35);
+  font-family: 'Syne', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fbbf24;
+  z-index: 1;
+}
+
+.trail-card__body {
+  padding: 1.5rem 1.6rem;
+  border-radius: 1.2rem;
+  background: rgba(10, 6, 22, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25);
+}
+
+.trail-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trail-card__period {
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fbbf24;
+}
+
+.trail-card__role {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  color: #fafafa;
+}
+
+.trail-card__company {
+  margin: 0.2rem 0 0;
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.trail-card__type {
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6ee7df;
+  border: 1px solid rgba(110, 231, 223, 0.35);
+  background: rgba(110, 231, 223, 0.08);
+}
+
+.trail-card__highlights {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  color: rgba(250, 250, 250, 0.78);
+  line-height: 1.7;
+}
+
+.trail-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.trail-card__stack span {
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  color: rgba(250, 250, 250, 0.85);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .trail__line {
+    left: 1.35rem;
+  }
+
+  .trail-card {
+    grid-template-columns: 3rem 1fr;
+  }
+}

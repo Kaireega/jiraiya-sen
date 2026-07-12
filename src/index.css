@@ -16,8 +16,8 @@ html {
   padding: 0;
   min-height: 100%;
   overflow-x: hidden;
-  background: #f7f4ef;
-  color: #1c1917;
+  background: #120a24;
+  color: #fafafa;
   font-family: 'DM Sans', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -27,6 +27,6 @@ html {
 }
 
 ::selection {
-  background: rgba(196, 160, 53, 0.28);
-  color: #1c1917;
+  background: rgba(251, 191, 36, 0.35);
+  color: #fff;
 }

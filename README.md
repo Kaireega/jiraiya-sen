@@ -1,27 +1,32 @@
 # jiraiya-sen
 
 [![Deploy](https://github.com/Kaireega/jiraiya-sen/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kaireega/jiraiya-sen/actions/workflows/deploy.yml)
-[![Live Site](https://img.shields.io/badge/live-portfolio-blue)](https://kaireega.github.io/jiraiya-sen/)
+[![Live Site](https://img.shields.io/badge/live-experience-blue)](https://kaireega.github.io/jiraiya-sen/)
 
-Personal portfolio for **Kai'ree Gay** — bold, elegant, recruiter-ready design with a chronological experience timeline.
+**The Trail & The Track** — an immersive portfolio experience for Kai'ree Gay.
 
 **Live site:** https://kaireega.github.io/jiraiya-sen/
 
-## Design
+## Experience
 
-- Dark editorial layout with gold accents
-- Syne + Cormorant Garamond typography
-- Single-column chronological experience timeline
-- Subtle animated star field background
-- Responsive layout with sticky navigation
+- **Three.js world** — mountains, fireflies, floating code & music glyphs at dusk
+- **Scroll-driven journey** — sky shifts from golden hour to night as you descend
+- **Passion constellation** — interactive orbs for Code, Music, Outdoors, Life
+- **Trail timeline** — chronological career markers along the path
+- **Ambient soundscape** — optional generative audio (Web Audio API)
+- **Intro gate** — "Begin the journey" cinematic entry
+
+## Stack
+
+React · Three.js · React Three Fiber · Drei · Framer Motion · Web Audio API
 
 ## Local development
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 npm start
 ```
 
 ## Deploy
 
-Pushes to `main` automatically deploy to GitHub Pages via `.github/workflows/deploy.yml`.
+Pushes to `main` deploy automatically to GitHub Pages.

@@ -2,27 +2,48 @@
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  color: #fafafa;
 }
 
-.background {
-  position: relative;
-  min-height: 100vh;
+.world-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.world-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.world-canvas--static {
   background:
-    radial-gradient(ellipse 90% 60% at 50% -5%, rgba(196, 160, 53, 0.14), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 10%, rgba(124, 108, 247, 0.08), transparent 50%),
-    linear-gradient(180deg, #faf8f4 0%, #f3efe6 45%, #ebe6dc 100%);
+    radial-gradient(circle at 50% 20%, rgba(255, 140, 66, 0.35), transparent 50%),
+    linear-gradient(180deg, #ff8c42 0%, #2d1b69 45%, #120a24 100%);
+}
+
+.experience-layer {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease 0.2s;
+}
+
+.experience-layer--visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .page-content {
   position: relative;
-  z-index: 2;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 0 1.25rem 4rem;
 }
 
 @media (min-width: 768px) {
   .page-content {
-    padding: 0 2.5rem 5rem;
+    padding: 0 2rem 5rem;
   }
 }

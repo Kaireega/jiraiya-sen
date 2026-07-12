@@ -1,0 +1,55 @@
+.audio-toggle {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(10, 6, 22, 0.75);
+  backdrop-filter: blur(12px);
+  color: #fafafa;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.audio-toggle:hover {
+  border-color: rgba(244, 114, 182, 0.5);
+}
+
+.audio-toggle--on {
+  box-shadow: 0 0 24px rgba(244, 114, 182, 0.25);
+}
+
+.audio-toggle__bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 1rem;
+}
+
+.audio-toggle__bar {
+  display: block;
+  width: 3px;
+  height: 40%;
+  border-radius: 2px;
+  background: #f472b6;
+}
+
+.audio-toggle--on .audio-toggle__bar {
+  animation: equalize 0.8s ease-in-out infinite alternate;
+}
+
+.audio-toggle__label {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@keyframes equalize {
+  from { height: 25%; }
+  to { height: 100%; }
+}

@@ -19,6 +19,7 @@ function Navbar() {
       </a>
 
       <nav className="navbar-links" aria-label="Primary">
+        <a href="#passions">Passions</a>
         <a href="#experience">Experience</a>
         <a href="https://github.com/Kaireega" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/kairee-gay-8520251b0" target="_blank" rel="noreferrer">Contact</a>

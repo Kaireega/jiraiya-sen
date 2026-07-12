@@ -1,0 +1,66 @@
+.hero-stage {
+  min-height: 92vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+}
+
+.hero-stage__inner {
+  max-width: 46rem;
+}
+
+.hero-stage__eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #fbbf24;
+}
+
+.hero-stage__title {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3.5rem, 12vw, 7rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #fafafa;
+  text-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero-stage__title span {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.55em;
+  color: #6ee7df;
+  margin-top: 0.1em;
+}
+
+.hero-stage__tagline {
+  margin: 1.5rem 0 0;
+  max-width: 32rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.45;
+  color: rgba(250, 250, 250, 0.88);
+}
+
+.hero-stage__scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.55);
+}
+
+.hero-stage__scroll-line {
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(to bottom, #fbbf24, transparent);
+}
