@@ -2,6 +2,7 @@
   "name": "jiraiya-sen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kaireega.github.io/jiraiya-sen",
   "dependencies": {
     "@mui/icons-material": "^6.3.0",
     "@testing-library/jest-dom": "^5.17.0",

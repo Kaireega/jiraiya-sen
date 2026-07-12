@@ -1,11 +1,12 @@
 # jiraiya-sen
 
+[![Deploy](https://github.com/Kaireega/jiraiya-sen/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kaireega/jiraiya-sen/actions/workflows/deploy.yml)
+[![Live Site](https://img.shields.io/badge/live-portfolio-blue)](https://kaireega.github.io/jiraiya-sen/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Personal portfolio and resume site for **Kai'ree Gay** — animated starry-background UI with a vertical career timeline.
 
-**Live demo:** Run locally with `npm start` → http://localhost:3000
+**Live site:** https://kaireega.github.io/jiraiya-sen/
 
 ---
 
