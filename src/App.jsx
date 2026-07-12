@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="background">
-        <StarryBackground starCount={120} />
+        <StarryBackground starCount={40} />
         <Navbar />
         <main className="page-content">
           <Hero />
