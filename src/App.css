@@ -1,52 +1,29 @@
-
-  html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-main, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
 .App {
-  margin: 0;
   position: relative;
-  font-family: "Matemasie", serif;
-  font-weight: 200;
-  font-style: normal;
-  
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+
 .background {
+  position: relative;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 108, 247, 0.14), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(212, 175, 55, 0.08), transparent 55%),
+    radial-gradient(ellipse 50% 30% at 0% 80%, rgba(212, 175, 55, 0.06), transparent 50%),
+    #08080a;
+}
 
-  --sz: 21px;
-  --c1: #181818;
-  --c2: #7c0472;
-  --c3: #3c055c;
-  --c4: #0006;
-  --ts: 50%/ calc(var(--sz) * 5) calc(var(--sz) * 10);
-  margin: 0;
-  padding: 0;
- 
-  
-  background: 
-    linear-gradient(180deg, var(--c4) 0 14%, #fff0 0 100%) var(--ts),
-    conic-gradient(from 0deg at 0% 14%, var(--c1) 0 20deg, #fff0 0 100%) var(--ts),
-    conic-gradient(from 20deg at 74% 50%, var(--c3) 0 70deg, #fff0 0 100%) var(--ts),
-    conic-gradient(from 90deg at 50% 50%, var(--c1) 0 70deg, #fff0 0 100%) var(--ts),
-    conic-gradient(from 90deg at 0% 50%, var(--c2) 0 70deg, var(--c1) 0 90deg, #fff0 0 100%) var(--ts),
-    linear-gradient(110deg, var(--c3) 0 33%, var(--c1) 0 66%, var(--c2) 0 90%, black 0 100%) var(--ts);
+.page-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
 
+@media (min-width: 768px) {
+  .page-content {
+    padding: 0 2.5rem 5rem;
   }
-  
- 
+}

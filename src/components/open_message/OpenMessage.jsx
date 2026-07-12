@@ -1,20 +1,53 @@
-import React from 'react'
-import './OpenMessage.css'
+import React from 'react';
+import './OpenMessage.css';
 
-function Open_Message() {
+function Hero() {
   return (
-    <div id="Open_Message">
-      <h1 id="headline_title">Hi, I 'm Kai'ree</h1>
-      <p id="open_message_body">  I'm just a chill dude who loves to code and solve problems.  
-          I'm currently looking for new opportunities to work on exciting projects and  
-          collaborate with other talented developers.
-      </p>
-      <p id="open_message_body">
-      When I'm not on the computer, I enjoy hiking, driving, and lifting weights.
+    <section id="top" className="hero">
+      <p className="hero-eyebrow">Software Engineer</p>
+
+      <h1 className="hero-title">
+        Kai&apos;ree <span className="hero-title-accent">Gay</span>
+      </h1>
+
+      <p className="hero-tagline">
+        I build systems that are deliberate, durable, and worth shipping —
+        from trading platforms to full-stack products.
       </p>
 
-    </div>
-  )
+      <p className="hero-body">
+        Software engineer with experience across fintech automation, Spring Boot backends,
+        React frontends, and Android development. I care about clean architecture, readable code,
+        and work that holds up under real-world pressure.
+      </p>
+
+      <div className="hero-actions">
+        <a href="#experience" className="hero-btn hero-btn-primary">View experience</a>
+        <a
+          href="https://github.com/Kaireega"
+          target="_blank"
+          rel="noreferrer"
+          className="hero-btn hero-btn-secondary"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kairee-gay-8520251b0"
+          target="_blank"
+          rel="noreferrer"
+          className="hero-btn hero-btn-secondary"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      <div className="hero-skills" aria-label="Core technologies">
+        {['Python', 'Java', 'TypeScript', 'Spring Boot', 'React', 'FastAPI', 'PostgreSQL', 'Kotlin'].map((skill) => (
+          <span key={skill} className="hero-skill">{skill}</span>
+        ))}
+      </div>
+    </section>
+  );
 }
 
-export default Open_Message
+export default Hero;

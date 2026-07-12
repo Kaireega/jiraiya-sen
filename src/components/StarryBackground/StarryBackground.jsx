@@ -6,17 +6,18 @@ const StarryBackground = ({ starCount = 100 }) => {
 
   useEffect(() => {
     const newStars = Array.from({ length: starCount }, () => ({
-      x: Math.random() * 100, // Random horizontal position
-      y: Math.random() * 100, // Random vertical position
-      size: Math.random() * 3 + 1, // Size range (1 to 4 pixels)
-      speed: Math.random() * 5 + 3, // Speed (3 to 8 seconds)
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: Math.random() * 2 + 0.5,
+      speed: Math.random() * 12 + 10,
+      opacity: Math.random() * 0.35 + 0.15,
     }));
 
     setStars(newStars);
   }, [starCount]);
 
   return (
-    <>
+    <div className="starry-background" aria-hidden="true">
       {stars.map((star, index) => (
         <div
           key={index}
@@ -26,11 +27,12 @@ const StarryBackground = ({ starCount = 100 }) => {
             left: `${star.x}%`,
             width: `${star.size}px`,
             height: `${star.size}px`,
+            opacity: star.opacity,
             animationDuration: `${star.speed}s`,
           }}
-        ></div>
+        />
       ))}
-    </>
+    </div>
   );
 };
 

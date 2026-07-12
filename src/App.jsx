@@ -1,23 +1,22 @@
 import React from "react";
 import "./App.css";
-import SocialBar from "./components/navigation/SocialBar";
-import Footer from "./components/footer/Footer";
-import OpenMessage from "./components/open_message/OpenMessage";
+import Navbar from "./components/navigation/Navbar";
+import Hero from "./components/open_message/OpenMessage";
 import VerticalTimeline from "./components/verticalTimeline/VerticalTimeline";
-
-import StarryBackground from "./components//StarryBackground/StarryBackground";
+import Footer from "./components/footer/Footer";
+import StarryBackground from "./components/StarryBackground/StarryBackground";
 
 function App() {
   return (
     <div className="App">
       <div className="background">
-        <StarryBackground starCount={300} /> 
-        <SocialBar />
-        <OpenMessage />
-        <VerticalTimeline/>
+        <StarryBackground starCount={120} />
+        <Navbar />
+        <main className="page-content">
+          <Hero />
+          <VerticalTimeline />
+        </main>
         <Footer />
-       
-
       </div>
     </div>
   );
